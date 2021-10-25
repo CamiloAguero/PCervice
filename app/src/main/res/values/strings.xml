@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PCervice</string>
+    <string name="login">LOGIN</string>
+    <string name="correo">Correo</string>
+    <string name="clave">Contraseña</string>
+    <string name="ingreso">Ingresar</string>
+    <string name="olv_clave">Olvidó su contraseña?</string>
+    <string name="reg_text">No posee una cuenta?</string>
+    <string name="reg">Registrarse</string>
+    <string name="regis">Registro</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="rep_clave">Repetir contraseña</string>
+    <string name="tuser">Tipo de usuario</string>
+    <string name="cliente">Cliente</string>
+    <string name="tecnico">Técnico</string>}
+    <string name="ciudad">Ciudad</string>
+
+    <string name="buscar">Buscar</string>
+    <string name="config">Configuración</string>
+    <string name="cerrar">Cerrar Sesión</string>
+    <string name="perfil">Perfil</string>
+
+    <string name="abrir_drawer">Drawer Abierto</string>
+    <string name="cerrar_drawer">Drawer cerrado</string>
+</resources>
