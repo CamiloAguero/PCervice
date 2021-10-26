@@ -6,8 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,6 +34,17 @@ public class Menu extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 //Recuperar la opcion del menu
+                int id = item.getItemId();
+                if (id == R.id.cerrar){
+                    SharedPreferences datos = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                    SharedPreferences.Editor edit = datos.edit();
+                    edit.remove("correo");
+                    edit.apply();
+                    finish();
+                }else if (id == R.id.perfil){
+                    perfil p = new perfil();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,p).commit();
+                }
                 return false;
             }
         });

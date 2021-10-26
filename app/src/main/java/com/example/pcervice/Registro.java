@@ -2,6 +2,7 @@ package com.example.pcervice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -37,19 +38,28 @@ public class Registro extends AppCompatActivity {
         switch (id){
             case R.id.rb_user:
                 tipo = "Usuario";
+
                 break;
             case R.id.rb_tec:
                 tipo = "Tecnico";
                 break;
-            default:
-                Toast.makeText(this, "No se seleccionó un tipo", Toast.LENGTH_SHORT).show();
         }
         Spinner spciudad = (Spinner) findViewById(R.id.sp_ciudad);
         String ciudad = spciudad.getSelectedItem().toString();
-        if(contra.equals(rep_contra)){
+        //Validaciones para el registro
+        if(nombre.isEmpty() || apellido.isEmpty() || correo.isEmpty() || contra.isEmpty() || rep_contra.isEmpty() || tipo.isEmpty()){
+            Toast.makeText(this, "Debe completar todos los campos", Toast.LENGTH_SHORT).show();
+        }else if(contra.equals(rep_contra)){
             Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+            if(tipo.equals("Usuario")){
+                Intent i = new Intent(this, Menu.class);
+                startActivity(i);
+            }else if (tipo.equals("Tecnico")){
+                Intent i = new Intent(this, RegistroTecnicos.class);
+                startActivity(i);
+            }
         }else{
-            Toast.makeText(this, "Fallo en el registro", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Las contraseñas deben ser iguales", Toast.LENGTH_SHORT).show();
         }
     }
 }

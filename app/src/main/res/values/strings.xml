@@ -8,6 +8,8 @@
     <string name="reg_text">No posee una cuenta?</string>
     <string name="reg">Registrarse</string>
     <string name="regis">Registro</string>
+    <string name="reg_tec">Registro de técnicos</string>
+    <string name="recordar">Recuerdame</string>
 
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
@@ -22,6 +24,16 @@
     <string name="cerrar">Cerrar Sesión</string>
     <string name="perfil">Perfil</string>
 
+    <string name="tomar">Tomar foto</string>
+    <string name="subir">Subir foto</string>
+    <string name="publicaciones">Publicaciones realizadas</string>
+    <string name="antecedentes">Archivo de antecedentes</string>
+    <string name="archivo">Subir archivo</string>
+    <string name="pregunta">¿Por qué preguntamos todo esto?</string>
+    <string name="desc">Descripción</string>
+
     <string name="abrir_drawer">Drawer Abierto</string>
     <string name="cerrar_drawer">Drawer cerrado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
