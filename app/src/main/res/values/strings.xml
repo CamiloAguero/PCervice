@@ -29,8 +29,12 @@
     <string name="publicaciones">Publicaciones realizadas</string>
     <string name="antecedentes">Archivo de antecedentes</string>
     <string name="archivo">Subir archivo</string>
-    <string name="pregunta">¿Por qué preguntamos todo esto?</string>
+    <string name="pregunta">¿Por qué pedimos todo esto?</string>
+    <string name="pregunta2">¿Por qué me obliga a poner foto?</string>
+    <string name="pregunta3">¿Por qué tengo que entregar mis antecedentes?</string>
+    <string name="pregunta4">¿Mi información la podrá ver toda la gente?</string>
     <string name="desc">Descripción</string>
+    <string name="cerrars">Cerrar</string>
 
     <string name="abrir_drawer">Drawer Abierto</string>
     <string name="cerrar_drawer">Drawer cerrado</string>
